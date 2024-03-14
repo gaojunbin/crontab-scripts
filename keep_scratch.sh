@@ -46,7 +46,6 @@ R="\033[1;31m" # RED
 GY="\033[1;30m" # GREY
 Z="\033[0m" # reset
 
-script_name=$HOME/dd
 script_name_length=${#script_name}
 
 # Calculate the padding for alignment
