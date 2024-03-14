@@ -9,7 +9,7 @@ Use crontab to execute a timed task to update the timestamps of files in a speci
    Just run:
 
    ```
-   curl -s https://raw.githubusercontent.com/gaojunbin/crontab-scripts/master/keep_scratch.sh -o ~/keep_scratch.sh && bash keep_scratch.sh && rm ~/keep_scratch.sh
+   curl -s https://raw.githubusercontent.com/gaojunbin/crontab-scripts/master/keep_scratch.sh -o ~/keep_scratch.sh && bash ~/keep_scratch.sh && rm ~/keep_scratch.sh
    ```
 
 2. Step 2
