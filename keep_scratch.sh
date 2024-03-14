@@ -49,18 +49,18 @@ Z="\033[0m" # reset
 script_name_length=${#script_name}
 
 # Calculate the padding for alignment
-padding_l=$(( (54 - script_name_length) / 2 ))
-padding_r=$(( 54 - script_name_length - padding_l ))
+padding_l=$(( (60 - script_name_length) / 2 ))
+padding_r=$(( 60 - script_name_length - padding_l ))
 
 # Start of the table
-echo -e "${B}+--------------------------------------------------------------------+${Z}"
-echo -e "${B}|${W} NSCC Script Generation Information @ LiuLab                        ${B}|${Z}"
-echo -e "${B}+--------------------------------------------------------------------+${Z}"
-echo -e "${B}|${W} The script has been generated successfully.                        ${B}|${Z}"
-echo -e "${B}|${W} Please add it to the scheduled task, such as:                      ${B}|${Z}"
-echo -e "${B}+--------------------------------------------------------------------+${Z}"
-echo -e "${B}|${GY} 1. Edit crontab file:                                              ${B}|${Z}"
-echo -e "${B}|${W} ${GY}                    \$ ${G}crontab -e                                ${Z}   ${B}|${Z}"
-echo -e "${B}|${GY} 2. Enter a scheduled task:                                         ${B}|${Z}"
+echo -e "${B}+--------------------------------------------------------------------------+${Z}"
+echo -e "${B}|${W} NSCC Script Generation Information @ LiuLab                              ${B}|${Z}"
+echo -e "${B}+--------------------------------------------------------------------------+${Z}"
+echo -e "${B}|${W} The script has been generated successfully.                              ${B}|${Z}"
+echo -e "${B}|${W} Please add it to the scheduled task, such as:                            ${B}|${Z}"
+echo -e "${B}+--------------------------------------------------------------------------+${Z}"
+echo -e "${B}|${GY} 1. Edit crontab file:                                                    ${B}|${Z}"
+echo -e "${B}|${W} ${GY}                    \$ ${G}crontab -e                                      ${Z}   ${B}|${Z}"
+echo -e "${B}|${GY} 2. Enter a scheduled task:                                               ${B}|${Z}"
 echo -e "${B}|${W} ${G}$(printf '%*s' $padding_l)0 0 * * * $script_name$(printf '%*s' $padding_r)${Z}   ${B}|${Z}"
-echo -e "${B}+--------------------------------------------------------------------+${Z}"
+echo -e "${B}+--------------------------------------------------------------------------+${Z}"
