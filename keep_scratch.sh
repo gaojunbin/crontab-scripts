@@ -38,10 +38,6 @@ echo 'Folder: "$folder"' >> $HOME/crontab_scripts/keep_scratch.log
 # Add execute permissions to the script
 chmod +x $script_name
 
-echo "The script is generated successfully, please add it to the scheduled task, such as:"
-echo "crontab -e"
-echo "0 0 * * * $script_name"
-
 # Define colors for the table
 W="\033[1;37m" # WHITE
 B="\033[1;34m" # BLUE
