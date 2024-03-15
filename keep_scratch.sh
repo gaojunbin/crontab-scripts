@@ -20,6 +20,7 @@ function traverse() {
     do
         if [ -d $1"/"$file ]
         then
+            touch $1"/"$file
             traverse $1"/"$file
         else
             touch $1"/"$file
