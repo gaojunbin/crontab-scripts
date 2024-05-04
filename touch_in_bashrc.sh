@@ -58,9 +58,9 @@ fi
 # Add execute permissions to the script
 chmod +x $script_name
 
-echo '>>>>>> update timestamp per 10 dayas >>>>>>' >> ~/.bashrc
+echo '# >>>>>> update timestamp per 10 dayas >>>>>>' >> ~/.bashrc
 echo sh $script_name >> ~/.bashrc
-echo '<<<<<< update timestamp per 10 dayas <<<<<<' >> ~/.bashrc
+echo '# <<<<<< update timestamp per 10 dayas <<<<<<' >> ~/.bashrc
 
 echo 'Generate successfully!'
 
